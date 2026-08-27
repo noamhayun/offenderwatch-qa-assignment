@@ -151,6 +151,18 @@ Validation:
 
 Invalid values are rejected.
 
+#### Testing Assumption — Geographic Coordinate Ranges
+
+FR-10 requires latitude and longitude to be valid coordinates but does not explicitly define their numeric boundaries.
+
+For test design and execution, the following standard geographic coordinate ranges are used as a testing assumption:
+
+- Latitude: -90 to 90 inclusive
+- Longitude: -180 to 180 inclusive
+
+Values outside these ranges are treated as invalid for testing purposes.
+
+This is a testing assumption based on standard geographic coordinate ranges, not an explicitly defined numeric constraint in the PRD.
 ---
 
 ## Dashboard & Statistics
